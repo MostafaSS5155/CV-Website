@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mostafa Ashraf | Interactive CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-theme="light">
+    <div class="cv-container">
+      <!-- Interactive Mode Toggle Buttons Container -->
+      <div class="controls">
+        <button class="toggle-btn" id="theme-toggle" onclick="toggleTheme()">
+          <span id="toggle-icon">💻</span>
+          <span id="toggle-text">Dev Perspective</span>
+        </button>
+      </div>
+
+      <!-- LEFT HALF (Identity & Dynamic Metric Details) -->
+      <aside class="sidebar">
+        <!-- PFP Placeholder Area -->
+        <div class="pfp-box">
+          <!-- UNCOMMENT the line below and add your image file path when ready: -->
+          <img src="fav7pfp.jpg" alt="Mostafa Ashraf" />
+          <!-- <span>Photo Area</span> -->
+        </div>
+
+        <!-- Name & Title Block: Positioned directly under photo for clean responsive tracking -->
+        <div class="profile-header">
+          <h1>Mostafa Ashraf</h1>
+          <div class="subtitle" id="dynamic-subtitle">
+            Medical Student & Developer
+          </div>
+        </div>
+
+        <!-- Traditional Core Metadata Info Block -->
+        <div class="meta-info">
+          <div class="meta-info-item"><strong>Age</strong><span>21</span></div>
+          <div class="meta-info-item">
+            <strong>Location</strong><span>Cairo, Egypt</span>
+          </div>
+          <div class="meta-info-item">
+            <strong>University</strong><span>Cairo Uni</span>
+          </div>
+        </div>
+
+        <!-- Animated Tech Skills (Configured visually like image_282319.png) -->
+        <div class="sidebar-section">
+          <h3>Tech Skills</h3>
+          <div class="skills-container">
+            <div class="skill-item">
+              <div class="skill-label"><span>HTML</span><span>90%</span></div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>CSS</span><span>70%</span></div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>JavaScript</span><span>40%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="40%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Python</span><span>20%</span></div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="20%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated Core Strengths -->
+        <div class="sidebar-section">
+          <h3>Strengths</h3>
+          <div class="skills-container">
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Communication</span><span>80%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Problem Solving</span><span>70%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Leadership</span><span>60%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT HALF (Text Summaries & Portfolio Content) -->
+      <main class="main-content">
+        <!-- Text Description Block -->
+        <section style="margin-top: 0.5rem">
+          <h2>About Me</h2>
+          <ul class="about-list">
+            <li>
+              Medical Student at <strong>Cairo University, Egypt</strong>.
+            </li>
+            <li>
+              Deeply passionate about Computer Science and Programming.
+              Currently mastering front-end engineering.
+            </li>
+            <li>
+              Perfected structural markup with HTML & layout design via CSS.
+              Actively strengthening JavaScript foundations through logical
+              building and consistent daily practice.
+            </li>
+            <li>
+              Open to low-budget or entry-level web architecture projects to
+              gain hard production experience and expand portfolio reach.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Project/Contribution Details -->
+        <section>
+          <h2>Contributions & Projects</h2>
+          <div class="exp-item">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.2rem">
+              Contributor
+            </h3>
+            <p
+              style="
+                color: var(--primary-color);
+                font-weight: 600;
+                font-size: 0.95rem;
+                margin-bottom: 0.5rem;
+              "
+            >
+              Medpal
+            </p>
+            <ul class="about-list" style="font-size: 0.95rem">
+              <li>
+                Assisting with educational structures and operational growth at
+                <a
+                  href="https://medpaledu.com"
+                  target="_blank"
+                  class="card-link"
+                  >medpaledu.com</a
+                >.
+              </li>
+              <li>
+                Bridging the gap between medical knowledge accuracy and system
+                accessibility.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Focus Sub-interests Area -->
+        <section>
+          <h2>Interests & Focus Areas</h2>
+          <ul class="about-list">
+            <li>Front-End Web Architecture & Design Systems</li>
+            <li>HealthTech & Digital Medicine Innovation</li>
+            <li>Algorithmic Logic Basics via Python</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <!-- Script Handling Operations -->
+    <script src="script.js"></script>
+  </body>
+</html>
