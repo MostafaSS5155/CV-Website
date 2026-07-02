@@ -16,9 +16,27 @@
     <div class="cv-container">
       <!-- Interactive Mode Toggle Buttons Container -->
       <div class="controls">
-        <button class="toggle-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <button
+          class="toggle-btn"
+          id="theme-toggle"
+          onclick="toggleTheme()"
+          aria-label="Toggle theme"
+        >
           <span id="toggle-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="theme-icon"
+            >
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
           </span>
         </button>
       </div>
@@ -44,74 +62,59 @@
         <div class="meta-info">
           <div class="meta-info-item"><strong>Age</strong><span>21</span></div>
           <div class="meta-info-item">
-            <strong>Location</strong><span>Cairo, Egypt</span>
+            <strong>Location</strong><span>Giza, Egypt</span>
           </div>
           <div class="meta-info-item">
-            <strong>University</strong><span>Cairo Uni</span>
+            <strong>University</strong><span>Cairo University</span>
+          </div>
+          <div class="meta-info-item">
+            <strong>Phone</strong><span>+201501099912</span>
+          </div>
+          <div class="meta-info-item">
+            <strong>Email</strong><span><a href="mailto:sasa2005tata@gmail.com" class="meta-link">sasa2005tata@gmail.com</a></span>
+          </div>
+          <div class="meta-info-item">
+            <strong>GitHub</strong><span><a href="https://github.com/MostafaSS5155" target="_blank" class="meta-link">MostafaSS5155</a></span>
+          </div>
+          <div class="meta-info-item">
+            <strong>LinkedIn</strong><span><a href="https://linkedin.com/in/mostafass5155" target="_blank" class="meta-link">mostafass5155</a></span>
           </div>
         </div>
 
-        <!-- Animated Tech Skills (Configured visually like image_282319.png) -->
+        <!-- Professional Tech Skills -->
         <div class="sidebar-section">
           <h3>Tech Skills</h3>
-          <div class="skills-container">
-            <div class="skill-item">
-              <div class="skill-label"><span>HTML</span><span>90%</span></div>
-              <div class="progress-bar-bg">
-                <div class="progress-bar-fill" data-progress="90%"></div>
-              </div>
+          <div class="skill-category">
+            <h4>Languages</h4>
+            <div class="tag-container">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">Python</span>
             </div>
-            <div class="skill-item">
-              <div class="skill-label"><span>CSS</span><span>70%</span></div>
-              <div class="progress-bar-bg">
-                <div class="progress-bar-fill" data-progress="70%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-label">
-                <span>JavaScript</span><span>40%</span>
-              </div>
-              <div class="progress-bar-bg">
-                <div class="progress-bar-fill" data-progress="40%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-label"><span>Python</span><span>20%</span></div>
-              <div class="progress-bar-bg">
-                <div class="progress-bar-fill" data-progress="20%"></div>
-              </div>
+          </div>
+          <div class="skill-category" style="margin-top: 1rem;">
+            <h4>Concepts & Tools</h4>
+            <div class="tag-container">
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">CSS Flexbox & Grid</span>
+              <span class="skill-tag">Git & GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Web Accessibility</span>
             </div>
           </div>
         </div>
 
-        <!-- Animated Core Strengths -->
+        <!-- Core Strengths -->
         <div class="sidebar-section">
           <h3>Strengths</h3>
-          <div class="skills-container">
-            <div class="skill-item">
-              <div class="skill-label">
-                <span>Communication</span><span>80%</span>
-              </div>
-              <div class="progress-bar-bg">
-                <div class="progress-bar-fill" data-progress="80%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-label">
-                <span>Problem Solving</span><span>70%</span>
-              </div>
-              <div class="progress-bar-bg">
-                <div class="progress-bar-fill" data-progress="70%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-label">
-                <span>Leadership</span><span>60%</span>
-              </div>
-              <div class="progress-bar-bg">
-                <div class="progress-bar-fill" data-progress="60%"></div>
-              </div>
-            </div>
+          <div class="tag-container">
+            <span class="strength-tag">Problem Solving</span>
+            <span class="strength-tag">Analytical Thinking</span>
+            <span class="strength-tag">Clear Communication</span>
+            <span class="strength-tag">Collaboration</span>
+            <span class="strength-tag">Self-Learning</span>
+            <span class="strength-tag">Attention to Detail</span>
           </div>
         </div>
       </aside>
@@ -121,22 +124,21 @@
         <!-- Text Description Block -->
         <section style="margin-top: 0.5rem">
           <h2>About Me</h2>
+          <p class="profile-summary">
+            A focused medical student and front-end web developer with a unique perspective on bridging clinical healthcare workflows with modern digital technologies. Passionate about web standards, responsive interface architectures, and creating accessible software platforms for healthcare education and research.
+          </p>
           <ul class="about-list">
             <li>
               Medical Student at <strong>Cairo University, Egypt</strong>.
             </li>
             <li>
-              Deeply passionate about Computer Science and Programming.
-              Currently mastering front-end engineering.
+              Passionate about computer science and software development, actively specializing in modern front-end engineering.
             </li>
             <li>
-              Perfected structural markup with HTML & layout design via CSS.
-              Actively strengthening JavaScript foundations through logical
-              building and consistent daily practice.
+              Proficient in crafting semantic HTML markup and responsive CSS layouts. Continuously expanding JavaScript foundations through logical problem-solving and daily practice.
             </li>
             <li>
-              Open to low-budget or entry-level web architecture projects to
-              gain hard production experience and expand portfolio reach.
+              Seeking entry-level web development opportunities and collaborative projects to gain hands-on production experience.
             </li>
           </ul>
         </section>
@@ -169,7 +171,7 @@
             </p>
             <ul class="about-list" style="font-size: 0.95rem">
               <li>
-                Assisting with educational structures and operational growth at
+                Supporting educational platform design and operational development at
                 <a
                   href="https://medpaledu.com"
                   target="_blank"
@@ -178,10 +180,98 @@
                 >.
               </li>
               <li>
-                Bridging the gap between medical knowledge accuracy and system
-                accessibility.
+                Bridging clinical medical accuracy with accessible and intuitive web layouts.
               </li>
             </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- SECOND PAGE (Projects & Testimonials) -->
+    <div class="cv-container single-col">
+      <main class="main-content" style="padding-top: 3rem">
+        <!-- Projects Section -->
+        <section>
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Medpal Portal</h3>
+                <span class="project-tag">HealthTech</span>
+              </div>
+              <p>
+                Designed user flows and built responsive layout components for a
+                leading online medical platform, bridging technology and
+                education.
+              </p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <a
+                href="https://medpaledu.com"
+                target="_blank"
+                class="project-link"
+              >
+                View Project <span>→</span>
+              </a>
+            </div>
+
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Clinical Telemetry App</h3>
+                <span class="project-tag">Web App</span>
+              </div>
+              <p>
+                An interactive, high-fidelity mock dashboard tracking patient
+                medical metrics. Features custom charts, telemetry graphs, and
+                styling controls.
+              </p>
+              <div class="project-tech">
+                <span>SVG</span>
+                <span>CSS Grid</span>
+                <span>Vanilla JS</span>
+              </div>
+              <a href="#" class="project-link"> View Demo <span>→</span> </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section>
+          <h2>Testimonials</h2>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <p class="testimonial-text">
+                "Mostafa brings a unique perspective as a medical student and a
+                front-end developer. His attention to detail in user
+                accessibility makes him an invaluable asset to Medpal."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">SA</div>
+                <div class="author-info">
+                  <h4>Dr. Sarah Ahmed</h4>
+                  <span>Founder, Medpal Educational Systems</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <p class="testimonial-text">
+                "Outstanding front-end capability. He creates beautiful, highly
+                responsive, and interactive layouts that are modular and
+                scalable."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">TE</div>
+                <div class="author-info">
+                  <h4>Tarek El-Amin</h4>
+                  <span>Lead Developer & Collaborator</span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
