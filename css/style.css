@@ -177,9 +177,15 @@ body {
   padding: 1.5rem 0;
 }
 
+.sidebar-section .meta-info {
+  border: none;
+  padding: 0.2rem 0;
+}
+
 .meta-info-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .meta-info-item strong {
@@ -514,6 +520,16 @@ section h2::after {
 .meta-link:hover {
   color: var(--primary-color);
   text-decoration: underline;
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.meta-info-item:hover .contact-icon {
+  transform: scale(1.15);
+  color: var(--accent-color) !important;
 }
 
 .skill-category h4 {

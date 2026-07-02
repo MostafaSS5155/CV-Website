@@ -1,0 +1,3 @@
+1- add fontawsome icons insted of W3 icons the already present
+2- make the contact info as icons only in website preveiw , & normal in PDFs preveiw
+3- dont forget to check & adjust PDF Page size 
