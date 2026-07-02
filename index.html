@@ -16,9 +16,10 @@
     <div class="cv-container">
       <!-- Interactive Mode Toggle Buttons Container -->
       <div class="controls">
-        <button class="toggle-btn" id="theme-toggle" onclick="toggleTheme()">
-          <span id="toggle-icon">💻</span>
-          <span id="toggle-text">Dev Perspective</span>
+        <button class="toggle-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+          <span id="toggle-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </span>
         </button>
       </div>
 
@@ -35,7 +36,7 @@
         <div class="profile-header">
           <h1>Mostafa Ashraf</h1>
           <div class="subtitle" id="dynamic-subtitle">
-            Medical Student & Developer
+            Front-End Dev // Medical Student
           </div>
         </div>
 
@@ -140,9 +141,18 @@
           </ul>
         </section>
 
+        <!-- Focus Sub-interests Area -->
+        <section>
+          <h2>Interests & Focus Areas</h2>
+          <ul class="about-list">
+            <li>Front-End Web Architecture & Design Systems</li>
+            <li>HealthTech & Digital Medicine Innovation</li>
+          </ul>
+        </section>
+
         <!-- Project/Contribution Details -->
         <section>
-          <h2>Contributions & Projects</h2>
+          <h2>Contributions</h2>
           <div class="exp-item">
             <h3 style="font-size: 1.15rem; margin-bottom: 0.2rem">
               Contributor
@@ -173,16 +183,6 @@
               </li>
             </ul>
           </div>
-        </section>
-
-        <!-- Focus Sub-interests Area -->
-        <section>
-          <h2>Interests & Focus Areas</h2>
-          <ul class="about-list">
-            <li>Front-End Web Architecture & Design Systems</li>
-            <li>HealthTech & Digital Medicine Innovation</li>
-            <li>Algorithmic Logic Basics via Python</li>
-          </ul>
         </section>
       </main>
     </div>

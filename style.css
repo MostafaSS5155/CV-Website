@@ -78,16 +78,21 @@ body {
   background-color: var(--card-bg);
   color: var(--text-color);
   border: 1px solid var(--border-color);
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
   cursor: pointer;
-  font-weight: 600;
-  font-size: 0.85rem;
   box-shadow: var(--shadow);
   transition: var(--transition);
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+}
+
+#toggle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .toggle-btn:hover {
