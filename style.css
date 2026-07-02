@@ -149,11 +149,12 @@ body {
 }
 
 .profile-header h1 {
-  font-size: 2rem;
+  font-size: 1.65rem;
   font-weight: 700;
   letter-spacing: -0.5px;
   margin-bottom: 0.4rem;
   color: var(--text-color);
+  white-space: nowrap;
 }
 
 .subtitle {
@@ -506,6 +507,7 @@ section h2::after {
   color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
+  font-size: 0.8rem;
   transition: var(--transition);
 }
 
@@ -567,4 +569,109 @@ section h2::after {
   color: var(--text-color);
   line-height: 1.7;
   margin-bottom: 1.2rem;
+}
+
+/* Print Optimization (Print only the first page CV) */
+@media print {
+  /* Force exact colors & backgrounds */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html, body {
+    font-size: 13.5px !important; /* Scale down the root size to compress layout */
+    background: #ffffff !important;
+    color: #2c3e50 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+    min-height: auto !important;
+  }
+
+  /* Hide interactive controls and the second page (projects & testimonials) */
+  .controls,
+  #theme-toggle,
+  .cv-container.single-col {
+    display: none !important;
+  }
+
+  /* Reset layout for the first page CV card */
+  .cv-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    display: grid !important;
+    grid-template-columns: 32% 68% !important; /* Slightly wider main content */
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  .sidebar {
+    padding: 1.5rem 1rem !important; /* Compressed sidebar padding */
+    gap: 1.2rem !important; /* Compressed sidebar gaps */
+    border-right: 1px solid var(--border-color) !important;
+    min-height: 100vh !important;
+  }
+
+  .pfp-box {
+    width: 105px !important; /* Scaled down avatar to save height */
+    height: 105px !important;
+  }
+
+  .profile-header {
+    margin-bottom: 0.2rem !important;
+  }
+
+  .profile-header h1 {
+    font-size: 1.35rem !important; /* Scale down name to match */
+  }
+
+  .meta-info {
+    padding: 0.8rem 0 !important; /* Compressed padding */
+    gap: 0.4rem !important;
+  }
+
+  .sidebar-section h3 {
+    margin-bottom: 0.6rem !important;
+  }
+
+  .skills-container {
+    gap: 0.8rem !important; /* Compressed skill item gaps */
+  }
+
+  .main-content {
+    padding: 2rem 1.8rem !important; /* Compressed main content padding */
+    gap: 1.5rem !important; /* Compressed vertical sections gap */
+  }
+
+  section h2 {
+    margin-bottom: 0.6rem !important;
+  }
+
+  .about-list li {
+    margin-bottom: 0.4rem !important; /* Compressed bullet margins */
+  }
+
+  /* Avoid page breaks inside sections */
+  section, 
+  .sidebar-section,
+  .meta-info {
+    page-break-inside: avoid !important;
+  }
+
+  /* Make links visually distinct and clickable in PDFs */
+  a {
+    color: var(--accent-color) !important;
+    text-decoration: underline !important;
+  }
+
+  /* Force wrapping of the second subtitle part on print/PDF only */
+  .block-print {
+    display: block !important;
+    margin-top: 0.1rem !important;
+  }
 }
